@@ -5,7 +5,7 @@ import PropTypes from "prop-types"
 import { Link } from "gatsby"
 import "./OrderInfo.css"
 
-const OrderInfo = React.lazy(({ order }) => {
+const OrderInfo =({ order }) => {
   return (
     <div className="order-info">
       <h3>ORDER NO: {order.orderId}</h3>
@@ -19,7 +19,7 @@ const OrderInfo = React.lazy(({ order }) => {
       </div>
     </div>
   )
-})
+}
 
 OrderInfo.propTypes = {
   order: PropTypes.object,
